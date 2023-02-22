@@ -11,6 +11,5 @@
   <% end %>
 </ul>
 
-
-<%= link_to "Back to Restaurants list", restaurants_path %>
-<%= link_to "Add a review",  new_restaurant_review_path(@restaurant) %>
+<%= render "reviews/form", review: @review %>
+<%= link_to "Back to Restaurants list", restaurants_path, class: "btn btn-primary" %>
